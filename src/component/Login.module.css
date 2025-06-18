@@ -1,0 +1,208 @@
+/* LoginModule.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Scoped Root Variables */
+:root {
+  --login-primary-bg: linear-gradient(135deg, #a78bfa, #7c3aed);
+  --login-glass-bg: rgba(255, 255, 255, 0.25);
+  --login-hover-color: #7c3aed;
+  --login-text-light: #000000; /* Changed to black */
+  --login-text-dark: #000000; /* Ensures dark text */
+  --login-border-radius: 15px;
+  --login-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-module {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: var(--login-primary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: var(--login-text-light); /* Set text color to black */
+}
+
+/* Main Container */
+.login-container {
+  display: flex;
+  width: 85%;
+  max-width: 1000px;
+  height: 85vh;
+  border-radius: var(--login-border-radius);
+  overflow: hidden;
+  box-shadow: var(--login-shadow);
+  background: var(--login-glass-bg);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Left Section */
+.login-left {
+  flex: 1;
+  background: var(--login-primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: var(--login-text-dark); /* Set text color to black */
+}
+
+.login-left-content {
+  z-index: 1;
+}
+
+.login-left-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-left-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.logo-container img {
+  width: 180px; /* Increase size */
+  height: 180px; /* Increase size */
+  border-radius: 50%; /* Keeps it perfectly round */
+  object-fit: cover; /* Ensures the image fits well in the circle */
+}
+
+/* Right Section */
+.login-right {
+  flex: 1.2;
+  background: var(--login-glass-bg);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-right-content {
+  width: 85%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--login-border-radius);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-right-content h2 {
+  font-size: 2.4rem;
+  color: var(--login-text-dark); /* Set text color to black */
+  margin-bottom: 15px;
+}
+
+.login-right-content p {
+  font-size: 1rem;
+  color: var(--login-text-dark); /* Set text color to black */
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+.login-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-form .form-label {
+  display: block;
+  color: var(--login-text-dark); /* Set text color to black */
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.login-form .form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #000000; /* Changed to black */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-form .form-input:focus {
+  border-color: #000000; /* Set border color to black */
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.login-form .form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .forgot-password {
+  color: #000000; /* Changed to black */
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-form .login-button {
+  background: var(--login-hover-color);
+  color: #000000; /* Changed to black */
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form .login-button:hover {
+  background-color: #a78bfa;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.terms-and-privacy {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: var(--login-text-dark); /* Set text color to black */
+}
+
+.school-name {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: var(--login-text-dark); /* Set text color to black */
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.login-form .login-button {
+  background: var(--login-hover-color);
+  color: white; /* Set text color to white */
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form .login-button:hover {
+  background-color: #a78bfa;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,68 @@
+General styling for the timetable container
+.timetable-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align content to the top */
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  /* padding-top: 20px; Adjust for vertical spacing */
+  /* min-height: 100vh; Ensure full-screen height */
+  box-sizing: border-box;
+  margin-bottom: 90%;
+}
+
+.timetable-content {
+  margin-top: 20px; /* Optional extra space from the top */
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #4b5563;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 90%;
+}
+
+
+/* Title styling */
+.timetable-title {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.view-timetable-button {
+  padding: 12px 24px;
+  background-color: #7c3aed;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-timetable-button:hover {
+  background-color: #7c3aed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timetable-title {
+    font-size: 1.5rem;
+  }
+
+  .view-timetable-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

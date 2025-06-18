@@ -1,0 +1,154 @@
+/* Main container styling */
+.payment-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.payment-container:hover {
+  transform: scale(1.02);
+}
+
+/* Header Styling */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Container */
+.table-container {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+/* Tables Styling */
+.payment-summary-table,
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.payment-summary-table th,
+.payment-summary-table td,
+.payment-history-table th,
+.payment-history-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-summary-table th,
+.payment-history-table th {
+  background-color: #eff6ff;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.payment-summary-table td,
+.payment-history-table td {
+  background-color: #ffffff;
+  color: #555;
+}
+
+.payment-history-table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.payment-history-table tr:hover {
+  background-color: #e2e8f0;
+}
+
+/* Button Styling */
+button.pay-now-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #5f27cd;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button.pay-now-button:hover {
+  background-color: #341f97;
+  transform: translateY(-2px);
+}
+
+button.pay-now-button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 18px;
+  margin-top: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Payment History Header */
+h4 {
+  margin-top: 40px;
+  font-size: 1.7rem;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .payment-summary-table,
+  .payment-history-table {
+    font-size: 0.95rem;
+  }
+
+  button.pay-now-button {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .error-message {
+    font-size: 1rem;
+  }
+}

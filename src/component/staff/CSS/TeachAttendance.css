@@ -1,0 +1,80 @@
+.attendance-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .attendance-form {
+    margin-bottom: 20px;
+  }
+  
+  .attendance-form label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .attendance-form select,
+  .attendance-form input {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .attendance-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .attendance-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .student-list {
+    margin-top: 20px;
+  }
+  
+  .student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .student-item span {
+    font-size: 16px;
+  }
+  
+  .attendance-summary {
+    margin-top: 20px;
+  }
+  
+  .attendance-summary h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .attendance-summary p {
+    font-size: 16px;
+  }
+  
+  .attendance-summary ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .attendance-summary li {
+    font-size: 16px;
+  }
+  
+  

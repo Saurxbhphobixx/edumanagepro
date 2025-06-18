@@ -1,0 +1,104 @@
+/* General Styles */
+.leave-container,
+.apply-leave-form-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Leave Table */
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leave-table th {
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px;
+}
+
+.leave-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.leave-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leave-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Buttons */
+button {
+  padding: 15px 25px; /* Increased size */
+  font-size: 1.2rem;   /* Increased font size */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px; /* Added margin on top for better spacing */
+}
+
+.apply-button {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.apply-button:hover {
+  background-color: #5b2fc4;
+}
+
+.back-button {
+  padding: 12px 24px;
+  background-color: #7c3aed;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #4b5563;
+}
+
+/* Button Container */
+.button-container {
+  display: flex; /* Align buttons in a row */
+  justify-content: flex-start; /* Align to the left */
+  gap: 15px; /* Space between buttons */
+}
+
+
+/* Form Elements */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+

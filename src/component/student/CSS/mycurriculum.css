@@ -1,0 +1,85 @@
+.curriculum-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #7c3aed;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.curriculum-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-header {
+  background-color: #7c3aed;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table-row {
+  display: flex;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #f1f1f1;
+}
+
+.table-cell {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+.even {
+  background-color: #f9f9f9;
+}
+
+.odd {
+  background-color: #ffffff;
+}
+
+.pdf-document {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pdf-controls button {
+  padding: 10px 20px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pdf-controls button:hover {
+  background-color: #7c3aed;
+}
+
+.pdf-controls span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

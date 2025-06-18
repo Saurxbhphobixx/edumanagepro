@@ -1,0 +1,794 @@
+/* General Profile Management Container */
+.profile-management-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: auto;
+  border: 2px solid #4b5563;
+  
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #7c3aed; /* Purple color */
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+  font-weight: 600;
+}
+
+/* Panel Grid Styling for Buttons */
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-out;
+  
+}
+
+.panel-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.panel-btn:hover {
+  background-color: #f4e1ff; /* Light purple hover */
+  transform: scale(1.0);
+ 
+}
+
+.panel-btn-icon {
+  font-size: 3.5em;
+  color: #7c3aed;
+  transition: color 0.3s ease;
+  
+}
+
+.panel-btn-label {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 15px;
+  
+}
+
+.panel-btn-description {
+  font-size: 1em;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Back Button Styling */
+.back-btn {
+  padding: 15px 35px;
+  background: linear-gradient(145deg, #7c3aed, #6b2fa7);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-btn:hover {
+  background: linear-gradient(145deg, #6b2fa7, #7c3aed);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Selection (View, Add, Edit, Delete) */
+.action-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.action-selection .panel-grid {
+  grid-template-columns: 1fr 1fr; /* Adjust for action buttons */
+}
+
+.panel-btn {
+  margin-top: 15px;
+  
+}
+
+/* Profiles List and Clickable List Items */
+.profiles-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profiles-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profiles-list li {
+  padding: 12px;
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profiles-list li:hover {
+  background-color: #e0d9ff;
+}
+
+/* Profile Details View */
+.profile-details {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details img {
+  max-width: 120px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.profile-details p {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+
+/* Form Layout and Styling */
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form button {
+  padding: 12px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 8px rgba(124, 58, 173, 0.5);
+}
+
+.profile-form button {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.profile-form button:hover {
+  background-color: #6b2fa7;
+}
+
+.profile-form .back-btn {
+  background-color: #dc3545;
+}
+
+.profile-form .back-btn:hover {
+  background-color: #c82333;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-form {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    width: 90%;
+  }
+
+  .panel-grid {
+    grid-template-columns: 1fr; /* Stack buttons on smaller screens */
+  }
+
+  .action-selection .panel-grid {
+    grid-template-columns: 1fr; /* Stack action buttons vertically */
+  }
+
+  .profiles-list li {
+    font-size: 1.1em;
+  }
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  color: #7c3aed;
+  cursor: pointer;
+}
+.add-record-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%; /* Full width of the container */
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-record-form .form-header {
+  font-size: 1.8em;
+  color: #7c3aed;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-record-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  column-gap: 20px; /* Space between columns */
+  row-gap: 15px; /* Space between rows */
+  width: 100%; /* Ensure it spans the full container width */
+}
+
+.add-record-form input,
+.add-record-form select {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%; /* Full width of each input field */
+  box-sizing: border-box; /* Include padding and border in width */
+  border:2px solid #4b5563;
+}
+
+.add-record-form input:focus,
+.add-record-form select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 8px rgba(124, 58, 173, 0.5);
+}
+
+.add-record-form button {
+  padding: 12px;
+  font-size: 1em;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-record-form button:hover {
+  background-color: #6b2fa7;
+}
+
+.add-record-form .form-buttons {
+  grid-column: span 2; /* Span both columns for buttons */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.add-record-form .form-buttons .back-btn {
+  background-color: #dc3545;
+}
+
+.add-record-form .form-buttons .back-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .add-record-form {
+    width: 100%;
+  }
+
+  .add-record-form form {
+    grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+  }
+
+  .add-record-form .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+  padding: 12px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 8px rgba(124, 58, 173, 0.5);
+}
+
+.modal-content button {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #6b2fa7;
+}
+
+.modal-content .form-header {
+  font-size: 1.8em;
+  color: #7c3aed;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-content .form-buttons .back-btn {
+  background-color: #dc3545;
+}
+
+.modal-content .form-buttons .back-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+
+  .modal-content .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}/* General container styling */
+.delete-record-container,
+.update-record-container,
+.view-record-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Filter section common styling */
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label styling */
+.filter label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Select box styling */
+.filter select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  transition: all 0.3s ease;
+  
+}
+
+/* Focus effect for select boxes */
+.filter select:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+
+/* Button styling */
+.filter button {
+  padding: 12px 20px;
+  background-color: #7c3aed;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: #6b2db2;
+}
+
+.filter button:active {
+  background-color: #5a1e9d;
+}
+
+/* Additional styling for different actions */
+.delete-record-container .filter,
+.update-record-container .filter,
+.view-record-container .filter{
+  background-color: #fafafa; /* Light background for clarity */
+  border-radius: 6px;
+
+}
+
+.delete-record-container .filter select,
+.update-record-container .filter select,
+.view-record-container .filter select {
+  border-color: #ddd;
+  
+  
+}
+
+.delete-record-container .filter button,
+.update-record-container .filter button,
+.view-record-container .filter button {
+  background-color: #7c3aed;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.delete-record-container .filter button:hover,
+.update-record-container .filter button:hover,
+.view-record-container .filter button:hover {
+  background-color: #6b2db2;
+}
+
+.delete-record-container .filter button:active,
+.update-record-container .filter button:active,
+.view-record-container .filter button:active {
+  background-color: #5a1e9d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .filter {
+    gap: 10px;
+  }
+
+  .filter select,
+  .filter button {
+    font-size: 16px;
+    
+  }
+}
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  flex-grow: 1; /* Allow the student info to take up available space */
+}
+
+.edit-btn {
+  margin-left: 10px;
+}
+
+.edit-btn {
+  background: #7c3aed; /* Primary theme color */
+  border-radius: 15px; /* Rounded rectangle shape */
+  box-shadow: #7c3aed 0 4px 8px -4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 14px; /* Smaller font size */
+  font-weight: 600;
+  line-height: 20px; /* Adjusted line height */
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 16px; /* Reduced padding for a tighter size */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto; /* Dynamic width */
+  min-width: 100px; /* Minimum width for shape integrity */
+  height: 38px; /* Reduced height */
+  word-break: break-word;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn:hover {
+  background: #6b2db2; /* Slightly darker shade on hover */
+  box-shadow: #6b2db2 0 6px 12px -4px;
+}
+
+.edit-btn:active {
+  background: #5a1e9d; /* Even darker shade when active */
+  box-shadow: #5a1e9d 0 2px 4px -2px;
+}
+
+.edit-btn:focus {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+.modal-content {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 50%; /* Reduced width */
+  max-width: 400px; /* Maximum width for smaller screens */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+  padding: 8px; /* Reduced padding */
+  font-size: 1em; /* Adjusted font size */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.modal-content .form-header {
+  font-size: 1.5em; /* Smaller header */
+  margin-bottom: 15px; /* Less margin */
+}
+
+.modal-content .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-content .form-buttons button {
+  padding: 10px 15px; /* Reduced button size */
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity */
+}
+
+.modal-content {
+  width: 300px; /* Reduced width */
+  height: auto; /* Adjust height as per form content */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Ensure it doesn’t overflow */
+}
+
+.form-header {
+  font-size: 18px; /* Smaller font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.theme-button {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+button.back-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+h4 {
+  margin: 10px 0;
+  font-size: 14px; /* Smaller header font size */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
+  font-size: 14px; /* Adjust font size of input fields */
+}

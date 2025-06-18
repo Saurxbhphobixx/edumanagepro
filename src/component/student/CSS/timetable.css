@@ -1,0 +1,83 @@
+/* General styling for the timetable container */
+.timetable-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered content with consistent spacing */
+.timetable-content {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Title styling */
+.timetable-title {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Centered button */
+.view-timetable-button {
+  padding: 12px 24px;
+  background-color: #7c3aed;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-timetable-button:hover {
+  background-color: #7c3aed;
+}
+
+/* PDF Viewer styling */
+.pdf-viewer {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-viewer iframe {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timetable-title {
+    font-size: 1.5rem;
+  }
+
+  .view-timetable-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .pdf-viewer iframe {
+    height: 400px;
+  }
+}

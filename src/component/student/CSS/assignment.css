@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #7c3aed;
+  --primary-hover-color: #7c3aed;
+  --success-color: #28a745;
+  --success-hover-color: #1e7e34;
+  --danger-color: #dc3545;
+  --danger-hover-color: #b02a37;
+  --text-color: #333;
+  --background-color: #fff;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+.assignment-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.assignment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.assignment-card {
+  background: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.assignment-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.assignment-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.assignment-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.assignment-actions button:first-child {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.assignment-actions button:first-child:hover {
+  background: var(--primary-hover-color);
+}
+
+.assignment-actions button:last-child {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.assignment-actions button:last-child:hover {
+  background: var(--success-hover-color);
+}
+
+.assignment-view,
+.assignment-submit {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.assignment-view h2,
+.assignment-submit h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.assignment-submit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignment-submit label {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.assignment-submit input[type="file"],
+.assignment-submit textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.assignment-submit textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-actions button:first-child {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.form-actions button:first-child:hover {
+  background: var(--primary-hover-color);
+}
+
+.form-actions button:last-child {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.form-actions button:last-child:hover {
+  background: var(--danger-hover-color);
+}

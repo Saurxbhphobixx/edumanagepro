@@ -1,0 +1,110 @@
+/* Main container */
+.payment-details-container {
+  max-width: 1094px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4b5563;
+}
+
+/* Heading */
+.payment-details-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.filter-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.filter-group select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 2px solid #4b5563;
+}
+
+.fetch-btn {
+  padding: 10px 20px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top:15px;
+}
+
+.fetch-btn:hover {
+  background-color: #a78bfa;
+}
+
+/* Table Styling */
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border: 2px solid #4b5563;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border: 2px solid #4b5563;
+}
+
+.payment-table th {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.payment-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.payment-table td[colspan="7"] {
+  text-align: center;
+  font-weight: bold;
+  color: #777;
+}
+.pay-by-cash-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pay-by-cash-btn:hover {
+  background-color: #45a049;
+}
+
+.payment-table td button {
+  margin-top: 10px;
+}

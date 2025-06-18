@@ -1,0 +1,160 @@
+.dashboard-container {
+  --primary-bg: #f8f9fc;
+  --secondary-bg: #ffffff;
+  --gradient-bg: linear-gradient(135deg, #a78bfa, #7c3aed);
+  --hover-color: #7c3aed;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --primary-color: #7c3aed; /* Added primary color variable */
+}
+
+.dashboard-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--gradient-bg);
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.active-menu-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.active-menu-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Add this line to push the ul to the right */
+  position: absolute; /* Add this line */
+  right: 20px; /* Add this line */
+}
+
+nav li {
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+nav li:hover {
+  color: var(--primary-color);
+}
+
+/* Rest of the existing styles remain the same */
+.dashboard-container .sidebar {
+  width: 250px;
+  background: var(--secondary-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.dashboard-container .sidebar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--hover-color);
+}
+
+.dashboard-container .sidebar .menu {
+  list-style-type: none;
+}
+
+.dashboard-container .sidebar .menu-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.dashboard-container .sidebar .menu-item:hover,
+.dashboard-container .sidebar .menu-item.active {
+  background-color: var(--hover-color);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3);
+}
+
+.dashboard-container .main-content {
+  flex: 1;
+  background: var(--secondary-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/* Removed duplicate header styles */
+/* ... rest of the existing styles ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .active-menu-container {
+    position: static;
+    transform: none;
+    order: -1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .dashboard-container .main-content .quick-links {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,54 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #4b5563;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.upload-assignment-container,
+.view-assignment-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #4b5563;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7c3aed;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #5b2fc4;
+}
+
+button.back-button {
+  margin-left: 10px;
+}

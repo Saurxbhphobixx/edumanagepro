@@ -1,0 +1,74 @@
+.leave-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.leave-dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.leave-table th {
+  background-color: #f7f7f7;
+  color: #555;
+}
+
+.leave-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-approve {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-approve:hover {
+  background-color: #218838;
+}
+
+.btn-reject {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reject:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}

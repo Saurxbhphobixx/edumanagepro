@@ -1,0 +1,141 @@
+/* General Styles */
+.leave-container,
+.apply-leave-form-container {
+  padding: 20px; /* Reduced padding */
+  max-width: 900px; /* Narrower form width */
+  margin: 20px auto;
+  border: 2px solid #4b5563;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Leave Table */
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px;
+
+}
+
+.leave-table th {
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px;
+}
+
+.leave-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.leave-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leave-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Buttons */
+button {
+  padding: 15px 25px; /* Increased size */
+  font-size: 1.2rem;   /* Increased font size */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px; /* Added margin on top for better spacing */
+}
+
+.apply-button {
+  background-color: #7c3aed;
+  color: white;
+  margin: 10px;
+  padding:10px;
+}
+
+.apply-button:hover {
+  background-color: #5b2fc4;
+}
+
+.back-button {
+  background-color: #7c3aed;
+  color: white;
+  margin: 10px;
+  padding:10px;
+}
+
+.back-button:hover {
+  background-color: #5b2fc4;
+}
+
+/* Button Container */
+.button-container {
+  display: flex; /* Align buttons in a row */
+  justify-content: flex-start; /* Align to the left */
+  gap: 15px; /* Space between buttons */
+  margin: 10px;
+}
+
+
+/* Form Elements */
+.form-group label {
+  display: block;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+   width: 100%; 
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-right:20px;
+
+}
+
+/* Card Container - Align cards side by side */
+.card-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px;
+}
+
+/* Card Style */
+.card {
+  flex: 1;
+  max-width: 300px; /* Optional: limit the maximum width of each card */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #4b5563;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    gap: 15px; /* Reduce gap between cards */
+  }
+}

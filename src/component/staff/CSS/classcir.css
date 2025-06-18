@@ -1,0 +1,167 @@
+/* Action Buttons and File Input */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.file-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.file-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.add-btn:hover {
+  background: linear-gradient(145deg, #218838, #28a745);
+  transform: scale(1.05);
+}
+
+.remove-btn {
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #dc3545, #c82333);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.remove-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.remove-btn:hover:not(:disabled) {
+  background: linear-gradient(145deg, #c82333, #dc3545);
+  transform: scale(1.05);
+}
+
+/* Curriculum Container */
+.curriculum-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Class Selection */
+.class-selection {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+#classSelect {
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.custom-dropdown .css-1s2u09g-control {
+  min-height: 45px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+
+.custom-dropdown .css-1s2u09g-control:hover {
+  border-color: #2980b9;
+}
+
+.custom-dropdown .css-1s2u09g-placeholder {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.custom-dropdown .css-1n7v3ny-option {
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.custom-dropdown .css-1n7v3ny-option:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-dropdown .css-1s2u09g-menu {
+  font-size: 1.2rem;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Button Styling */
+.add-btn,
+.view-btn,
+.remove-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.add-btn:hover,
+.view-btn:hover,
+.remove-btn:hover {
+  background-color: #2980b9;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #2980b9;
+  border-color: #2980b9;
+}
